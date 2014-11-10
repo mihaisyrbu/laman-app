@@ -1,4 +1,3 @@
-/////////////////////////////////////////////////
 var session_id;
 var company_name;
 var obj;
@@ -60,6 +59,23 @@ $(document).ready(function ()
 					}
 				}
 				break;
+			}
+		});
+
+		$('.button-center').click(function()
+		{
+			var first_page = $('.first-page');
+			var second_page = $('.second-page');
+
+			if ( first_page.css('display') == 'block' )
+			{
+				first_page.css('display', 'none');
+				second_page.css('display', 'block');
+			}
+			else if ( second_page.css('display') == 'block' )
+			{
+				first_page.css('display', 'block');
+				second_page.css('display', 'none');
 			}
 		});
 	}
